@@ -1,0 +1,64 @@
+:root {
+    --color: rgb(9, 166, 161);
+    --buttonColor: #0fc0bb;
+    --font: AppleGothic, sans-serif;
+    --colorWhite: white;
+    --backgroundLight: #c6d0d0;
+}
+
+*{
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+header{
+    padding: 1rem;
+    background-color: var(--color);
+    text-align: center;
+    color: var(--colorWhite);
+    font-size: 40px;
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.div-1{
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem 5rem;
+    background: var(--backgroundLight);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9{
+    position: center;
+    background: var(--buttonColor);
+    border: none;
+    color: var(--colorWhite);
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+.div-2{
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-template-rows: 5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: var(--backgroundLight);
+}
+.btn-reset{
+    position: center;
+    background: #305b5b;
+    color: var(--colorWhite);
+    width: 6rem;
+    height: 3rem;
+}

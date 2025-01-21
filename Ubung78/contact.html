@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="script.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">Travel Agency</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<header class="header">
+    <div>
+        <h1>Contact</h1>
+    </div>
+</header>
+<section class="section">
+    <form class="form">
+        <div class="row">
+            <div class="col-25">
+                <label for="sname">Surname</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="sname" name="surname" placeholder="Your surname..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" placeholder="user@mydomain.com">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="day">Day of visit</label>
+            </div>
+            <div class="col-75">
+                <section id="day" name="day">
+                    <label>
+                        <input type="date">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="time">Time of visit</label>
+            </div>
+            <div class="col-75">
+                <section id="time" name="day">
+                    <label>
+                        <input type="time">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="rate">How did you like it?</label>
+            </div>
+            <div class="col-75">
+                <section id="rate" name="rate">
+                    <label>
+                        <select name="rate">
+                            <option value="rate">Rate 1-5 best to worst</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="recommend">Do you recommend?</label>
+            </div>
+            <div class="col-75">
+                <section id="recommend" name="recommend">
+                    <label for="recommend">Yes</label>
+                    <label>
+                        <input type="radio">
+                    </label>
+
+                    <label for="recommend">No</label>
+                    <label>
+                        <input type="radio">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="visitorsInfo">How do you visit?</label>
+            </div>
+            <div class="col-75">
+                <section id="visitorsInfo" name="visitorsInfo">
+                    <label>
+                        <select name="visitorsInfo">
+                            <option value="Chose">Chose</option>
+                            <option value="Family outing">Family outing</option>
+                            <option value="Traveling alone">Traveling alone</option>
+                            <option value="Group trip">Group trip</option>
+                            <option value="Excursion with friends">Excursion with friends</option>
+                            <option value="something else">something else</option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row0">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+<footer class="footer">
+    <div><p><a href="#">Privacy Policy</a></p></div>
+    <div id="current_date"></div>
+</footer>
+<script>
+    document.getElementById("current_date").innerHTML = Date();
+</script>
+</body>
+</html>

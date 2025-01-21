@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="script.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="title">Dream Escape</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<header class="header">
+    <div>
+        <h1>Contact</h1>
+    </div>
+</header>
+<section class="section">
+    <form class="form">
+        <div class="row">
+            <div class="col-left">
+                <label for="name">Name</label>
+            </div>
+            <div class="col-right">
+                <input type="text" id="name" name="Name" placeholder="First & Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-right">
+                <input type="email" id="email" placeholder="user@mydomain.com">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="destination">What was your travel destination?</label>
+            </div>
+            <div class="col-right">
+                <section id="destination" name="destination">
+                    <label>
+                        <select name="destination">
+                            <option value="rate"> Choose your destination ⬇︎ </option>
+                            <option value="1">Austria, Salzburg</option>
+                            <option value="2">Austria, Vienna</option>
+                            <option value="3">Serbia, Belgrade</option>
+                            <option value="4">Maldives</option>
+                            <option value="5">Italy, Rome</option>
+                            <option value="6">Tenerife</option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="visit">Day of the visit</label>
+            </div>
+            <div class="col-right">
+                <section id="visit" name="day">
+                    <label>
+                        <input type="date">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="time">Time of the visit</label>
+            </div>
+            <div class="col-right">
+                <section id="time" name="day">
+                    <label>
+                        <input type="time">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="rate">Do you like our services?</label>
+            </div>
+            <div class="col-right">
+                <section id="rate" name="rate">
+                    <label>
+                        <select name="rate">
+                            <option value="rate"> Rate us between 1 and 5 🙂 </option>
+                            <option value="5">5 = Very Satisfied</option>
+                            <option value="4">4 = Satisfied</option>
+                            <option value="3">3 = Neutral </option>
+                            <option value="2">2 = Dissatisfied </option>
+                            <option value="1">1 = Very Dissatisfied </option>
+                            <option value="0">N/A = Void Response </option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="recommend">Would you recommend us?</label>
+            </div>
+            <div class="col-right">
+                <section id="recommend" name="recommend">
+                    <label for="recommend">Yes</label>
+                    <label>
+                        <input type="radio" name="recomm">
+                    </label>
+
+                    <label for="recommend">No</label>
+                    <label>
+                        <input type="radio" name="recomm">
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="visitorsInfo">Type of the visit?</label>
+            </div>
+            <div class="col-right">
+                <section id="visitorsInfo" name="visitorsInfo">
+                    <label>
+                        <select name="visitorsInfo">
+                            <option value="Choose">Choose</option>
+                            <option value="Leisure Travel">Leisure Travel</option>
+                            <option value="Corporate Travel">Corporate Travel</option>
+                            <option value="Group Travel">Group travel</option>
+                            <option value="Family Travel">Family Travel</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+        </div>
+        <div class="row0">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+<footer class="footer">
+    <div><p><a href="#">Privacy Policy</a></p></div>
+    <div id="current_date"></div>
+</footer>
+</body>
+</html>

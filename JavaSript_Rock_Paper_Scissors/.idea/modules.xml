@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JavaScript2_CC_MathQuiz/.idea/JavaScript2_CC_MathQuiz.iml" filepath="$PROJECT_DIR$/../JavaScript2_CC_MathQuiz/.idea/JavaScript2_CC_MathQuiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JavaScript1_CC_Rock_Paper_Scissors/.idea/JavaSript_Rock_Paper_Scissors.iml" filepath="$PROJECT_DIR$/../JavaScript1_CC_Rock_Paper_Scissors/.idea/JavaSript_Rock_Paper_Scissors.iml" />
+    </modules>
+  </component>
+</project>

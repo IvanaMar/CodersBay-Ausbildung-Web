@@ -1,0 +1,221 @@
+body {
+    margin: auto;
+    background-color: bisque;
+    height: 90vh;
+}
+img {
+    max-width: 35%;
+}
+
+header{
+    background-image: linear-gradient(
+            rgba(211, 211, 220, 0.57),
+            rgba(245, 240, 240, 0.27),
+            rgba(178, 135, 105, 0.55)
+
+    ),  url("background4.jpeg");
+    border-radius: 19px;
+    border: saddlebrown double 6px;
+    padding: 3%;
+
+} footer {
+    background: linear-gradient(
+            rgba(211, 211, 220, 0.52),
+            rgba(185, 141, 111, 0.64)
+    );
+
+      border-radius: 19px;
+      border: saddlebrown double 6px;
+      padding: 2%;
+
+
+}
+h1 {
+    text-align: center;
+    font-style: oblique;
+    font-family: "Helvetica Neue";
+    font-size: 28px;
+    color: #3b1b01;
+}
+nav,footer{
+
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
+    font-size: 18px;
+    font-family: "Microsoft Sans Serif";
+    color: #3b1b01;
+    margin-top: 2%;
+
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin: 2%;
+    font-family: "Microsoft Sans Serif";
+    font-size: 17px;
+    color: saddlebrown;
+    width: 50%;
+}
+
+
+.aboutUs article{
+    display: block;
+    text-align: justify;
+    justify-content: center;
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+
+main{
+    display: flex;
+    justify-items: center;
+}
+
+table {
+    padding: 3%;
+    font-family: "Microsoft Sans Serif";
+    font-size: 17px;
+    color: saddlebrown;
+    width: 96%;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 4%;
+}
+
+table td, table th {
+    border: 1px solid saddlebrown;
+}
+
+img {
+    border-radius: 19px;
+    max-width: 95%;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.firstAbout {
+    width: 80%;
+
+}
+
+.form-head {
+    font-size: 20px;
+    color: saddlebrown;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-image: linear-gradient(
+            rgb(239, 127, 11),
+            rgba(243, 182, 126, 0.87),
+            rgba(241, 194, 164, 0.64)
+
+    );
+    background-size: cover;
+    border-radius: 19px;
+    border: 5px double #e5a059;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4%;
+}
+form label {
+    display: block;
+    font-size: 1em;
+    color: lightgoldenrodyellow;
+}
+input, textarea {
+    width: 95%;
+    font-size: 1em;
+    padding: 5px;
+    font-family: "Roboto Thin";
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+input[type=submit] {
+    background-color: #984a13;
+    color: lightgoldenrodyellow;
+    font-family: Audiowide;
+    font-size: 14px;
+    cursor: pointer;
+    width: 12em;
+    padding: .3em;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background-color: #ecb47a;
+    input:focus,
+}
+
+textarea:focus {
+    border: 2px solid saddlebrown;
+}
+
+.container {
+    display: flex;
+    wrap-option: wrap;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container input {
+    position: relative;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+    background-color: #e3bb34;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #e8d974;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 420px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    img, p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}

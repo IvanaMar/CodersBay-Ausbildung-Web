@@ -1,0 +1,213 @@
+html, body {
+    margin: auto;
+    background-color: saddlebrown;
+    overflow-x: hidden;
+}
+
+
+header, footer {
+    background: linear-gradient(
+            rgba(211, 211, 220, 0.52),
+            rgba(185, 141, 111, 0.64)
+    );
+
+    border-radius: 19px;
+    border: #8B4513FF double 6px;
+    padding: 2%;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 3rem 0 3rem;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    color: #FAEBD7FF;
+
+}
+img{
+    border-radius: 19px;
+    margin-right: 4rem;
+    width: 450px;
+}
+
+
+h1 {
+    margin-top: 4%;
+    text-align: center;
+    font-style: oblique;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 2.5rem;
+    color: #3b1b01;
+}
+
+hr {
+    margin-top: 3%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    margin-top: 4%;
+    color: #FAEBD7FF;
+    font-size: 20px;
+    width: 90%;
+}
+
+.animals {
+    height: 350px;
+    width: 500px;
+}
+
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #FAEBD7FF;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+#tablecontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+}
+
+table {
+    font-family: "Microsoft Sans Serif", sans-serif;
+    text-align: center;
+    font-size: 17px;
+    color: #FAEBD7FF;
+    width: 70%;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 3rem;
+
+}
+
+table td, table th {
+    border: 1px solid #FAEBD7FF;
+}
+
+.headTable {
+    border-style: dotted;
+    border-color: #FAEBD7FF;
+    text-align: center;
+}
+
+form {
+    background-image: linear-gradient(
+            rgb(239, 127, 11),
+            rgba(243, 182, 126, 0.87),
+            rgba(241, 194, 164, 0.64)
+
+    );
+    background-size: cover;
+    border-radius: 19px;
+    border: 5px double #e5a059;
+    width: 60%;
+    margin: 0 auto;
+    padding: 4%;
+    font-size: 16px;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-weight: bold;
+    color: #FFFFFFFF;
+}
+form label {
+    display: block;
+    font-size: 1em;
+    color: #FAEBD7FF;
+}
+input, datalistlist {
+    display: list-item;
+}
+
+.yesno {
+    margin-left: 1%;
+}
+
+input, textarea {
+    width: 95%;
+    font-size: 1em;
+    padding: 5px;
+    font-family: "Roboto Thin", sans-serif;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+input[type=submit] {
+    background-color: #984a13;
+    color: #FAFAD2FF;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 12em;
+    padding: .3em;
+    outline: none;
+    margin-right: 3%;
+
+}
+
+input[type=submit]:hover {
+    background-color: #ecb47a;
+    input:focus,
+}
+
+input[type=reset] {
+    background-color: #984a13;
+    color: #FAFAD2FF;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 12em;
+    padding: .3em;
+    outline: none;
+    margin-left: 3%;
+}
+
+input[type=reset]:hover {
+    background-color: #ecb47a;
+    input:focus,
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+nav,footer{
+
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
+    font-size: 18px;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    color: #3b1b01;
+    margin-top: 2rem;
+
+}
+
+@media screen and (max-width: 420px) {
+    section, article, .list {
+        display: flex;
+        flex-direction: column;
+    }
+    img, p {
+        max-width: 100%;
+        text-align: justify;
+        margin-right: 0;
+    }
+
+    select {
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
